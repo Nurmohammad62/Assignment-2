@@ -262,7 +262,7 @@ footer{
     .footer-logo img{
         width: 100%;
     }
-    .header, .section-gallery, footer{
+    .header, footer{
         display: none;
     }
 }
