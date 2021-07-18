@@ -10,11 +10,7 @@ body{
     margin: 0;
     padding: 0;
 }
-h2{
-    font-size: 48px;
-}
-.main-container{
-    width: 100%;
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +20,9 @@ h2{
     justify-content: center;
     width: 1200px;
     margin-bottom: 150px;
+}
+h2{
+    font-size: 48px;
 }
 
 @keyframes showDelay {
@@ -72,7 +71,7 @@ h2{
 .header-banner img{
     width: 556px;
     height: auto;
-    padding-left: 60px;
+    /* padding-left: 60px; */
     transition: transform 1s;
 }
 .header-banner img:hover{
@@ -180,21 +179,87 @@ footer{
 /*------------------------------
     Media Qurey for Tablet devices
 --------------------------------- */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    /* Header query */
+    .header{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-text{
+        margin-bottom: 50px;
+    }
+    .header-banner{
+        text-align: center;
+    }
+    
+    /* Players */
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    /* Hilights query */
+    .hilights{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5%;
+    }
+    .hilights-text{
+        margin-bottom: 50px;
+    }
+    .hilights-banner img{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Gallery query */
+    .big-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .small-images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 
 /*------------------------------
     Media Qurey for small devices
 --------------------------------- */
 @media only screen and (max-width: 688px) {
-    /* header query */
     .container{
         width: 100%;
         margin-bottom: 60px;
     }
+    /* header query */
     .header{
         flex-direction: column;
+        align-items: center;
+        padding: 5% 5%;
+    }
+    .header-text{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .header-title{
+        font-size: 50px;
+    }
+    .header-banner{
+        width: 300px;
+        text-align: center;
+    }
+    .header-banner img{
+        width: 300px;
+        padding: 0;
+    }
+    /* .header{
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         padding: 5%;
     } 
     .header-text{
@@ -206,12 +271,12 @@ footer{
         font-size: 50px;
     }
     .header-banner{
-        width: 100%;
+        width: 300px;
     }
     .header-banner img{
         width: 300px;
-        padding-left: 20px;
-    }
+        padding-left: 0;
+    } */
 
     /* players list query */
     .players{
