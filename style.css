@@ -10,7 +10,11 @@ body{
     margin: 0;
     padding: 0;
 }
+h2{
+    font-size: 48px;
+}
 .main-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,13 +39,10 @@ body{
     Header styles
 --------------------------------- */
 .header{
+    display: flex;
     background-color: #2D25A0;
     padding: 5% 10%;
     margin-bottom: 80px;
-}
-.header-content{
-    display: flex;
-    justify-content: space-between;
 }
 .header-text{
     width: 485px;
@@ -56,6 +57,7 @@ body{
     background-color: #E02C6D;
     padding: 10px 24px;
     color: white;
+
     /* animation */
     animation: showDelay 2s ease-in;
 }
@@ -69,6 +71,7 @@ body{
 .header-banner img{
     width: 556px;
     height: auto;
+    padding: 0 60px;
     transition: transform 1s;
 }
 .header-banner img:hover{
@@ -84,9 +87,9 @@ body{
     grid-gap: 30px;
 }
 .player{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: left; */
     width: 300px;
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -100,7 +103,8 @@ body{
     Section Hilights styles
 --------------------------------- */
 .hilights{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .hilights-text p{
     margin-bottom: 30px;
@@ -120,6 +124,9 @@ body{
 .section-gallery img{
     transition: transform 1s;
 }
+.gallery-title{
+    text-align: center;
+}
 .big-images{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -127,15 +134,15 @@ body{
     margin-bottom: 5px;
     overflow: hidden;
 }
+.big-images img{
+    width: 100%;
+    height: 380px;
+}
 .small-images{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 5px;
     overflow: hidden;
-}
-.big-images img{
-    width: 100%;
-    height: 380px;
 }
 .small-images img{
     width: 100%;
@@ -147,6 +154,7 @@ body{
 --------------------------------- */
 footer{
     height: 200px;
+    width: 100%;
 }
 .footer-content{
     display: flex;
@@ -167,15 +175,24 @@ footer{
     border-radius: 50%;
 }
 
+
 /*------------------------------
-    Footer styles
+    Media Qurey for Tablet devices
+--------------------------------- */
+
+
+
+/*------------------------------
+    Media Qurey for small devices
 --------------------------------- */
 @media only screen and (max-width: 688px) {
     /* header query */
     .container{
         width: 100%;
-        /* flex-direction: column;
-        align-items: center; */
+        margin-bottom: 60px;
+    }
+    .header{
+        width: 100%;
     }
     .header-content{
         flex-direction: column;
@@ -186,6 +203,9 @@ footer{
         width: 100%;
         text-align: center;
         margin-bottom: 50px;
+    }
+    .header-title{
+        font-size: 50px;
     }
     .header-banner{
         width: 300px;
@@ -200,10 +220,49 @@ footer{
     }
     
 
-    /* Hilights */
+    /* Hilights query */
+    .hilights{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 25px;
+        text-align: center;
+    }
+    .hilights-banner img{
+        width: 100%;
+        margin-left: 0;
+    }
 
-    /* display: none */
-     .hilights, .section-gallery, header, footer{
+    /* Gallery query */
+    .section-gallery{
+        margin-bottom: 60px;
+    }
+    .big-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .big-images img{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .small-images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .small-images img{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    /* footer query */
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content{
+        margin: 0 5px;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+    .header, .hilights, .section-gallery, footer{
         display: none;
     }
 }
