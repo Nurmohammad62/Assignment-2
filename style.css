@@ -39,14 +39,11 @@ h2{
     Header styles
 --------------------------------- */
 .header{
-    /* display: flex;
-    background-color: #2D25A0;
-    padding: 5% 10%;
-    margin-bottom: 80px; */
     display: flex;
     justify-content: center;
     background-color: #2D25A0;
     padding: 5% 10%;
+    margin-bottom: 60px;
 }
 .header-text{
     width: 485px;
@@ -196,10 +193,8 @@ footer{
         margin-bottom: 60px;
     }
     .header{
-        /* width: 100%; */
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
         padding: 5%;
     } 
     .header-text{
@@ -211,11 +206,11 @@ footer{
         font-size: 50px;
     }
     .header-banner{
-        width: 300px;
+        width: 100%;
     }
     .header-banner img{
         width: 300px;
-        padding: 0;
+        padding-left: 20px;
     }
 
     /* players list query */
