@@ -40,7 +40,6 @@ h2{
 --------------------------------- */
 .header{
     display: flex;
-    justify-content: space-between;
     background-color: #2D25A0;
     padding: 5% 10%;
     margin-bottom: 80px;
