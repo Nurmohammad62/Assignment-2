@@ -192,13 +192,12 @@ footer{
         margin-bottom: 60px;
     }
     .header{
-        width: 100%;
-    }
-    .header-content{
+        /* width: 100%; */
         flex-direction: column;
         justify-content: center;
         /* align-items: center; */
-    }
+        padding: 5%;
+    } 
     .header-text{
         width: 100%;
         text-align: center;
@@ -211,7 +210,8 @@ footer{
         width: 300px;
     }
     .header-banner img{
-        width: 100%;
+        width: 300px;
+        padding: 0;
     }
 
     /* players list query */
