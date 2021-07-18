@@ -197,7 +197,7 @@ footer{
     .header-content{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
     }
     .header-text{
         width: 100%;
@@ -211,7 +211,7 @@ footer{
         width: 300px;
     }
     .header-banner img{
-        width: 300px;
+        width: 100%;
     }
 
     /* players list query */
