@@ -39,10 +39,14 @@ h2{
     Header styles
 --------------------------------- */
 .header{
-    display: flex;
+    /* display: flex;
     background-color: #2D25A0;
     padding: 5% 10%;
-    margin-bottom: 80px;
+    margin-bottom: 80px; */
+    display: flex;
+    justify-content: center;
+    background-color: #2D25A0;
+    padding: 5% 10%;
 }
 .header-text{
     width: 485px;
