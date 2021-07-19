@@ -71,7 +71,7 @@ h2{
 .header-banner img{
     width: 556px;
     height: auto;
-    /* padding-left: 60px; */
+    padding-left: 60px;
     transition: transform 1s;
 }
 .header-banner img:hover{
@@ -253,27 +253,6 @@ footer{
         width: 300px;
         padding: 0;
     }
-    /* .header{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 5%;
-    } 
-    .header-text{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .header-title{
-        font-size: 50px;
-    }
-    .header-banner{
-        width: 300px;
-    }
-    .header-banner img{
-        width: 300px;
-        padding-left: 0;
-    } */
 
     /* players list query */
     .players{
